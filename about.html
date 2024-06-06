@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>About Us - Tourist Places</title>
+<style>
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #06abf8;
+    color: rgb(0, 6, 8);
+}
+
+header {
+  color: #4CAF50; 
+    font-size: 36px; 
+    font-family: 'Arial', sans-serif;
+    text-align: center; 
+    text-transform: uppercase; 
+    letter-spacing: 2px; 
+    margin-bottom: 20px; 
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2); 
+    background: linear-gradient(45deg, #4CAF50, #FFC107);
+    -webkit-background-clip: text; /
+    -webkit-text-fill-color: transparent;
+}
+
+.container {
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+    background-color: skyblue;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  text-decoration: underline;
+    color: black;
+    text-align: center;
+}
+h2{
+  color: red;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.places {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.place {
+    background-color: #f1f1f7;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.place img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.place h3 {
+    margin: 10px 0;
+    color: #60f809;
+}
+
+.place p {
+    color: #666;
+    line-height: 1.6;
+}
+
+@media only screen and (max-width: 600px) {
+    .places {
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    }
+}
+</style>
+</head>
+<body>
+<header>
+    <h1>About Us</h1>
+</header>
+
+<div class="container">
+    <h2>Discover Amazing Tourist Places</h2>
+    <div class="places">
+        <div class="place">
+            <img src="beach.jpg" alt="Place 1">
+            <h3>Beach Paradise</h3>
+            <p>Experience the serenity of white sandy beaches and crystal clear waters. Perfect for sunbathing, swimming, and water sports.</p>
+        </div>
+        <div class="place">
+            <img src="mountain.jpg" alt="Place 2">
+            <h3>Mountain Retreat</h3>
+            <p>Escape to the mountains and immerse yourself in breathtaking landscapes. Enjoy hiking, trekking, and camping amidst nature.</p>
+        </div>
+        <div class="place">
+            <img src="culturalheritage.jpg" alt="Place 3">
+            <h3>Cultural Heritage</h3>
+            <p>Explore ancient temples, historic monuments, and vibrant local markets. Discover the rich culture and heritage of the region.</p>
+        </div>
+        <div class="place">
+            <img src="citybuzz.jpg" alt="Place 4">
+            <h3>City Buzz</h3>
+            <p>Indulge in the hustle and bustle of urban life. Visit iconic landmarks, trendy restaurants, and bustling shopping districts.</p>
+        </div>
+    </div>
+</div>
+
+<footer style="background-color: #2008fd; color: white; text-align: center; padding: 20px; margin-top: 50px;">
+    &copy; 2024 Tourist Explorer
+</footer>
+</body>
+</html>
